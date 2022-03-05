@@ -1,0 +1,8 @@
+strings:
+  inputs:
+    - IssueGazerPackage/Sources/Resources/en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+      output: IssueGazerPackage/Sources/Resources/Generated/GeneratedStrings.swift

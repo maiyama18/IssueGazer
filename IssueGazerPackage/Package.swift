@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "IssueGazerPackage",
+    defaultLocalization: "en",
     products: [
         .library(
             name: "AppFeature",
@@ -14,6 +15,9 @@ let package = Package(
     targets: [
         .target(
             name: "AppFeature",
+            dependencies: []),
+        .target(
+            name: "Resources",
             dependencies: []),
     ]
 )
