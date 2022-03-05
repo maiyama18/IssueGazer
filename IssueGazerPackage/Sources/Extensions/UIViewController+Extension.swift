@@ -5,7 +5,7 @@
 //  Created by maiyama on 2022/03/05.
 //
 
-import UIKit
+import SwiftUI
 
 public extension UIViewController {
     func hostSwiftUIView<Content: View>(_ rootView: Content) {

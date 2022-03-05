@@ -16,7 +16,16 @@ let package = Package(
     targets: [
         .target(
             name: "AppFeature",
-            dependencies: []),
+            dependencies: [
+                "SettingsFeature",
+                "Resources",
+            ]),
+        .target(
+            name: "SettingsFeature",
+            dependencies: [
+                "Extensions",
+                "Resources",
+            ]),
         .target(
             name: "Extensions",
             dependencies: []),
