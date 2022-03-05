@@ -19,7 +19,25 @@ public final class MainTabViewController: UITabBarController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBarAppearance()
+        setupTabBarAppearance()
         setupViewControllers()
+    }
+    
+    private func setupNavigationBarAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
+    private func setupTabBarAppearance() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .systemBackground
+        tabBar.standardAppearance = appearance
+        tabBar.scrollEdgeAppearance = appearance
+        tabBar.tintColor = .tintColor
     }
     
     private func setupViewControllers() {
