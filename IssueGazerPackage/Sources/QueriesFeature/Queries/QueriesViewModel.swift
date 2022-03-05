@@ -1,4 +1,4 @@
-// 
+//
 //  QueriesViewModel.swift
 //  QueriesFeature
 //

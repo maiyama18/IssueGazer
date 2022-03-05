@@ -1,4 +1,4 @@
-// 
+//
 //  SettingsViewModel.swift
 //  SettingsFeature
 //

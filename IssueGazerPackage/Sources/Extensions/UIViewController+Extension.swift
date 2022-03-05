@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-public extension UIViewController {
-    func hostSwiftUIView<Content: View>(_ rootView: Content) {
+extension UIViewController {
+    public func hostSwiftUIView<Content: View>(_ rootView: Content) {
         let hostingVC = UIHostingController(rootView: rootView)
         addChild(hostingVC)
         hostingVC.didMove(toParent: self)
@@ -17,4 +17,3 @@ public extension UIViewController {
         hostingVC.view.pinEdgesToSuperview()
     }
 }
-

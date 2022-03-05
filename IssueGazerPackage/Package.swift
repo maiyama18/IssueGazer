@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "AppFeature",
-            targets: ["AppFeature"]),
+            targets: ["AppFeature"])
     ],
     dependencies: [],
     targets: [
