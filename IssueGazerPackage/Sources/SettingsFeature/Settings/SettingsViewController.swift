@@ -1,6 +1,6 @@
 //
 //  SettingsViewController.swift
-//  IssueGazer
+//  SettingsFeature
 //
 //  Created by maiyama on 2022/03/05.
 //

@@ -2,6 +2,7 @@
 
 xcuserdata/
 .build/
+*.xcscheme
 *.ipa
 *.zip
 system_logs.logarchive/
