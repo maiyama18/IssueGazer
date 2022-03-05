@@ -4,7 +4,7 @@ on:
   pull_request
 
 jobs:
-  test:
+  format:
     runs-on: macos-latest
 
     concurrency:
@@ -13,6 +13,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: debug
+        run: |
+          echo ${GITHUB_REF}
+          echo ${GITHUB_HEAD_REF}
+          echo ${GITHUB_REF_NAME}
+          echo $(git branch)
+          echo $(git status)
 
       - uses: irgaly/setup-mint@v1
 
@@ -24,4 +34,4 @@ jobs:
           git config --local user.email "github.actions@example.com"
           git config --local user.name "github actions"
           git add "*.swift"
-          git commit -m "Execute swift-format" && git push origin HEAD
+          git commit -m "Execute swift-format" && git push

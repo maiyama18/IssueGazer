@@ -6,4 +6,6 @@
   
 */
 
-"hello" = "Hello";
+"queries.title" = "Queries";
+
+"settings.title" = "Settings";
