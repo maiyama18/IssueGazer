@@ -17,7 +17,14 @@ let package = Package(
         .target(
             name: "AppFeature",
             dependencies: [
+                "QueriesFeature",
                 "SettingsFeature",
+                "Resources",
+            ]),
+        .target(
+            name: "QueriesFeature",
+            dependencies: [
+                "Extensions",
                 "Resources",
             ]),
         .target(

@@ -11,6 +11,11 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
 
+  public enum Queries {
+    /// Queries
+    public static let title = L10n.tr("Localizable", "queries.title")
+  }
+
   public enum Settings {
     /// Settings
     public static let title = L10n.tr("Localizable", "settings.title")
