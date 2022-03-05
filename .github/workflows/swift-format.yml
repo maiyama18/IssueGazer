@@ -1,0 +1,27 @@
+name: SwiftFormat
+
+on:
+  pull_request
+
+jobs:
+  test:
+    runs-on: macos-latest
+
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: irgaly/setup-mint@v1
+
+      - name: execute swift-format
+        run: mint run swift-format swift-format format --recursive --in-place .
+
+      - name: git push
+        run: |
+          git config --local user.email "github.actions@example.com"
+          git config --local user.name "github actions"
+          git add "*.swift"
+          git commit -m "Execute swift-format" && git push origin HEAD
