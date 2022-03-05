@@ -17,6 +17,9 @@ let package = Package(
             name: "AppFeature",
             dependencies: []),
         .target(
+            name: "Extensions",
+            dependencies: []),
+        .target(
             name: "Resources",
             dependencies: []),
     ]
