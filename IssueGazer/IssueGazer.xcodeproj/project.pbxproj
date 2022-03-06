@@ -22,6 +22,8 @@
 		381E5F5527D4396C006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
 		381E5F5627D4397B006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
 		381E5F5727D43982006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
+		381E5F6327D444E2006E916C /* IssuesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5F27D443E4006E916C /* IssuesWidget.swift */; };
+		381E5F6427D444E5006E916C /* IssuesTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F6127D4442A006E916C /* IssuesTimelineProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		381E5F3A27D3AED9006E916C /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		381E5F3C27D3AED9006E916C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = IssueGazerWidget.intentdefinition; sourceTree = "<group>"; };
+		381E5F5F27D443E4006E916C /* IssuesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesWidget.swift; sourceTree = "<group>"; };
+		381E5F6127D4442A006E916C /* IssuesTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesTimelineProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		381E5F2227D3A896006E916C /* IssueGazerWidget */ = {
 			isa = PBXGroup;
 			children = (
+				381E5F5E27D443D9006E916C /* IssuesWidget */,
 				381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */,
 				381E5F2327D3A896006E916C /* IssueGazerWidget.swift */,
 				381E5F2627D3A896006E916C /* Assets.xcassets */,
@@ -164,6 +169,15 @@
 				381E5F3C27D3AED9006E916C /* Info.plist */,
 			);
 			path = IssueGazerIntent;
+			sourceTree = "<group>";
+		};
+		381E5F5E27D443D9006E916C /* IssuesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				381E5F5F27D443E4006E916C /* IssuesWidget.swift */,
+				381E5F6127D4442A006E916C /* IssuesTimelineProvider.swift */,
+			);
+			path = IssuesWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				381E5F5627D4397B006E916C /* IssueGazerWidget.intentdefinition in Sources */,
+				381E5F6427D444E5006E916C /* IssuesTimelineProvider.swift in Sources */,
+				381E5F6327D444E2006E916C /* IssuesWidget.swift in Sources */,
 				381E5F2427D3A896006E916C /* IssueGazerWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
