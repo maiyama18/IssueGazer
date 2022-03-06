@@ -10,7 +10,9 @@ import Intents
 class IntentHandler: INExtension {}
 
 extension IntentHandler: IssuesSearchConfigurationIntentHandling {
-    func provideQueryOptionsCollection(for intent: IssuesSearchConfigurationIntent) async throws -> INObjectCollection<Query> {
+    func provideQueryOptionsCollection(for intent: IssuesSearchConfigurationIntent) async throws -> INObjectCollection<
+        Query
+    > {
         let query1 = Query(identifier: "query1", display: "My Issues")
         query1.text = "query 1"
         let query2 = Query(identifier: "query2", display: "Assigned Issues")

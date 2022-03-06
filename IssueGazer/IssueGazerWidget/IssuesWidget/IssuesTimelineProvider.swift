@@ -17,16 +17,22 @@ struct IssuesTimelineProvider: IntentTimelineProvider {
         IssuesEntry(date: Date(), configuration: IssuesSearchConfigurationIntent())
     }
 
-    func getSnapshot(for configuration: IssuesSearchConfigurationIntent, in context: Context, completion: @escaping (IssuesEntry) -> ()) {
+    func getSnapshot(
+        for configuration: IssuesSearchConfigurationIntent, in context: Context,
+        completion: @escaping (IssuesEntry) -> Void
+    ) {
         let entry = IssuesEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(for configuration: IssuesSearchConfigurationIntent, in context: Context, completion: @escaping (Timeline<IssuesEntry>) -> ()) {
+    func getTimeline(
+        for configuration: IssuesSearchConfigurationIntent, in context: Context,
+        completion: @escaping (Timeline<IssuesEntry>) -> Void
+    ) {
         var entries: [IssuesEntry] = []
 
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
+        for hourOffset in 0..<5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
             let entry = IssuesEntry(date: entryDate, configuration: configuration)
             entries.append(entry)
@@ -36,4 +42,3 @@ struct IssuesTimelineProvider: IntentTimelineProvider {
         completion(timeline)
     }
 }
-
