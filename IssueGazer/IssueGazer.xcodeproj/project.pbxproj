@@ -11,7 +11,52 @@
 		381E5ED627D33652006E916C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5ED527D33652006E916C /* SceneDelegate.swift */; };
 		381E5EDD27D33653006E916C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381E5EDC27D33653006E916C /* Assets.xcassets */; };
 		381E5EE927D339A7006E916C /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 381E5EE827D339A7006E916C /* AppFeature */; };
+		381E5F1F27D3A896006E916C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E5F1E27D3A896006E916C /* WidgetKit.framework */; };
+		381E5F2127D3A896006E916C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E5F2027D3A896006E916C /* SwiftUI.framework */; };
+		381E5F2427D3A896006E916C /* IssueGazerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F2327D3A896006E916C /* IssueGazerWidget.swift */; };
+		381E5F2727D3A896006E916C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381E5F2627D3A896006E916C /* Assets.xcassets */; };
+		381E5F2D27D3A896006E916C /* IssueGazerWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 381E5F1D27D3A896006E916C /* IssueGazerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		381E5F3827D3AED9006E916C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E5F3727D3AED9006E916C /* Intents.framework */; };
+		381E5F3B27D3AED9006E916C /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F3A27D3AED9006E916C /* IntentHandler.swift */; };
+		381E5F3F27D3AED9006E916C /* IssueGazerIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		381E5F5527D4396C006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
+		381E5F5627D4397B006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
+		381E5F5727D43982006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
+		381E5F6327D444E2006E916C /* IssuesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5F27D443E4006E916C /* IssuesWidget.swift */; };
+		381E5F6427D444E5006E916C /* IssuesTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F6127D4442A006E916C /* IssuesTimelineProvider.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		381E5F2B27D3A896006E916C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381E5EC827D33652006E916C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 381E5F1C27D3A896006E916C;
+			remoteInfo = IssueGazerWidgetExtension;
+		};
+		381E5F3D27D3AED9006E916C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381E5EC827D33652006E916C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 381E5F3527D3AED9006E916C;
+			remoteInfo = IssueGazerIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		381E5F2E27D3A896006E916C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				381E5F3F27D3AED9006E916C /* IssueGazerIntent.appex in Embed App Extensions */,
+				381E5F2D27D3A896006E916C /* IssueGazerWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		381E5ED027D33652006E916C /* IssueGazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IssueGazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +64,19 @@
 		381E5ED527D33652006E916C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		381E5EDC27D33653006E916C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		381E5EE127D33653006E916C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381E5F1D27D3A896006E916C /* IssueGazerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IssueGazerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		381E5F1E27D3A896006E916C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		381E5F2027D3A896006E916C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		381E5F2327D3A896006E916C /* IssueGazerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueGazerWidget.swift; sourceTree = "<group>"; };
+		381E5F2627D3A896006E916C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		381E5F2827D3A896006E916C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IssueGazerIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		381E5F3727D3AED9006E916C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		381E5F3A27D3AED9006E916C /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		381E5F3C27D3AED9006E916C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = IssueGazerWidget.intentdefinition; sourceTree = "<group>"; };
+		381E5F5F27D443E4006E916C /* IssuesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesWidget.swift; sourceTree = "<group>"; };
+		381E5F6127D4442A006E916C /* IssuesTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesTimelineProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +88,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381E5F1A27D3A896006E916C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381E5F2127D3A896006E916C /* SwiftUI.framework in Frameworks */,
+				381E5F1F27D3A896006E916C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381E5F3327D3AED9006E916C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381E5F3827D3AED9006E916C /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				381E5ED227D33652006E916C /* IssueGazer */,
+				381E5F2227D3A896006E916C /* IssueGazerWidget */,
+				381E5F3927D3AED9006E916C /* IssueGazerIntent */,
 				381E5ED127D33652006E916C /* Products */,
 				381E5EE727D339A7006E916C /* Frameworks */,
 			);
@@ -46,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				381E5ED027D33652006E916C /* IssueGazer.app */,
+				381E5F1D27D3A896006E916C /* IssueGazerWidgetExtension.appex */,
+				381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,8 +143,41 @@
 		381E5EE727D339A7006E916C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				381E5F1E27D3A896006E916C /* WidgetKit.framework */,
+				381E5F2027D3A896006E916C /* SwiftUI.framework */,
+				381E5F3727D3AED9006E916C /* Intents.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		381E5F2227D3A896006E916C /* IssueGazerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				381E5F5E27D443D9006E916C /* IssuesWidget */,
+				381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */,
+				381E5F2327D3A896006E916C /* IssueGazerWidget.swift */,
+				381E5F2627D3A896006E916C /* Assets.xcassets */,
+				381E5F2827D3A896006E916C /* Info.plist */,
+			);
+			path = IssueGazerWidget;
+			sourceTree = "<group>";
+		};
+		381E5F3927D3AED9006E916C /* IssueGazerIntent */ = {
+			isa = PBXGroup;
+			children = (
+				381E5F3A27D3AED9006E916C /* IntentHandler.swift */,
+				381E5F3C27D3AED9006E916C /* Info.plist */,
+			);
+			path = IssueGazerIntent;
+			sourceTree = "<group>";
+		};
+		381E5F5E27D443D9006E916C /* IssuesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				381E5F5F27D443E4006E916C /* IssuesWidget.swift */,
+				381E5F6127D4442A006E916C /* IssuesTimelineProvider.swift */,
+			);
+			path = IssuesWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,10 +190,13 @@
 				381E5ECC27D33652006E916C /* Sources */,
 				381E5ECD27D33652006E916C /* Frameworks */,
 				381E5ECE27D33652006E916C /* Resources */,
+				381E5F2E27D3A896006E916C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				381E5F2C27D3A896006E916C /* PBXTargetDependency */,
+				381E5F3E27D3AED9006E916C /* PBXTargetDependency */,
 			);
 			name = IssueGazer;
 			packageProductDependencies = (
@@ -90,6 +205,40 @@
 			productName = IssueGazer;
 			productReference = 381E5ED027D33652006E916C /* IssueGazer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		381E5F1C27D3A896006E916C /* IssueGazerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381E5F3127D3A896006E916C /* Build configuration list for PBXNativeTarget "IssueGazerWidgetExtension" */;
+			buildPhases = (
+				381E5F1927D3A896006E916C /* Sources */,
+				381E5F1A27D3A896006E916C /* Frameworks */,
+				381E5F1B27D3A896006E916C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IssueGazerWidgetExtension;
+			productName = IssueGazerWidgetExtension;
+			productReference = 381E5F1D27D3A896006E916C /* IssueGazerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		381E5F3527D3AED9006E916C /* IssueGazerIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381E5F4027D3AED9006E916C /* Build configuration list for PBXNativeTarget "IssueGazerIntent" */;
+			buildPhases = (
+				381E5F3227D3AED9006E916C /* Sources */,
+				381E5F3327D3AED9006E916C /* Frameworks */,
+				381E5F3427D3AED9006E916C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IssueGazerIntent;
+			productName = IssueGazerIntent;
+			productReference = 381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +251,12 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					381E5ECF27D33652006E916C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					381E5F1C27D3A896006E916C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					381E5F3527D3AED9006E916C = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -120,6 +275,8 @@
 			projectRoot = "";
 			targets = (
 				381E5ECF27D33652006E916C /* IssueGazer */,
+				381E5F1C27D3A896006E916C /* IssueGazerWidgetExtension */,
+				381E5F3527D3AED9006E916C /* IssueGazerIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +290,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381E5F1B27D3A896006E916C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381E5F2727D3A896006E916C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381E5F3427D3AED9006E916C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,11 +313,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				381E5ED427D33652006E916C /* AppDelegate.swift in Sources */,
+				381E5F5527D4396C006E916C /* IssueGazerWidget.intentdefinition in Sources */,
 				381E5ED627D33652006E916C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381E5F1927D3A896006E916C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381E5F5627D4397B006E916C /* IssueGazerWidget.intentdefinition in Sources */,
+				381E5F6427D444E5006E916C /* IssuesTimelineProvider.swift in Sources */,
+				381E5F6327D444E2006E916C /* IssuesWidget.swift in Sources */,
+				381E5F2427D3A896006E916C /* IssueGazerWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381E5F3227D3AED9006E916C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381E5F5727D43982006E916C /* IssueGazerWidget.intentdefinition in Sources */,
+				381E5F3B27D3AED9006E916C /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		381E5F2C27D3A896006E916C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 381E5F1C27D3A896006E916C /* IssueGazerWidgetExtension */;
+			targetProxy = 381E5F2B27D3A896006E916C /* PBXContainerItemProxy */;
+		};
+		381E5F3E27D3AED9006E916C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 381E5F3527D3AED9006E916C /* IssueGazerIntent */;
+			targetProxy = 381E5F3D27D3AED9006E916C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		381E5EE227D33653006E916C /* Debug */ = {
@@ -267,6 +473,7 @@
 		381E5EE527D33653006E916C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +503,7 @@
 		381E5EE627D33653006E916C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +530,114 @@
 			};
 			name = Release;
 		};
+		381E5F2F27D3A896006E916C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56T4RFDKJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IssueGazerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IssueGazerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		381E5F3027D3A896006E916C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56T4RFDKJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IssueGazerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IssueGazerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		381E5F4127D3AED9006E916C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56T4RFDKJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IssueGazerIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IssueGazerIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		381E5F4227D3AED9006E916C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56T4RFDKJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IssueGazerIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IssueGazerIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +655,24 @@
 			buildConfigurations = (
 				381E5EE527D33653006E916C /* Debug */,
 				381E5EE627D33653006E916C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381E5F3127D3A896006E916C /* Build configuration list for PBXNativeTarget "IssueGazerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381E5F2F27D3A896006E916C /* Debug */,
+				381E5F3027D3A896006E916C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381E5F4027D3AED9006E916C /* Build configuration list for PBXNativeTarget "IssueGazerIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381E5F4127D3AED9006E916C /* Debug */,
+				381E5F4227D3AED9006E916C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
