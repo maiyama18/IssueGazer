@@ -15,9 +15,13 @@
 		381E5F2127D3A896006E916C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E5F2027D3A896006E916C /* SwiftUI.framework */; };
 		381E5F2427D3A896006E916C /* IssueGazerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F2327D3A896006E916C /* IssueGazerWidget.swift */; };
 		381E5F2727D3A896006E916C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381E5F2627D3A896006E916C /* Assets.xcassets */; };
-		381E5F2927D3A896006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F2527D3A896006E916C /* IssueGazerWidget.intentdefinition */; };
-		381E5F2A27D3A896006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F2527D3A896006E916C /* IssueGazerWidget.intentdefinition */; };
 		381E5F2D27D3A896006E916C /* IssueGazerWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 381E5F1D27D3A896006E916C /* IssueGazerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		381E5F3827D3AED9006E916C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381E5F3727D3AED9006E916C /* Intents.framework */; };
+		381E5F3B27D3AED9006E916C /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F3A27D3AED9006E916C /* IntentHandler.swift */; };
+		381E5F3F27D3AED9006E916C /* IssueGazerIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		381E5F5527D4396C006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
+		381E5F5627D4397B006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
+		381E5F5727D43982006E916C /* IssueGazerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,13 @@
 			remoteGlobalIDString = 381E5F1C27D3A896006E916C;
 			remoteInfo = IssueGazerWidgetExtension;
 		};
+		381E5F3D27D3AED9006E916C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381E5EC827D33652006E916C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 381E5F3527D3AED9006E916C;
+			remoteInfo = IssueGazerIntent;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				381E5F3F27D3AED9006E916C /* IssueGazerIntent.appex in Embed App Extensions */,
 				381E5F2D27D3A896006E916C /* IssueGazerWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -54,9 +66,13 @@
 		381E5F1E27D3A896006E916C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		381E5F2027D3A896006E916C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		381E5F2327D3A896006E916C /* IssueGazerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueGazerWidget.swift; sourceTree = "<group>"; };
-		381E5F2527D3A896006E916C /* IssueGazerWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IssueGazerWidget.intentdefinition; sourceTree = "<group>"; };
 		381E5F2627D3A896006E916C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		381E5F2827D3A896006E916C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IssueGazerIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		381E5F3727D3AED9006E916C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		381E5F3A27D3AED9006E916C /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		381E5F3C27D3AED9006E916C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = IssueGazerWidget.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381E5F3327D3AED9006E916C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381E5F3827D3AED9006E916C /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +109,7 @@
 			children = (
 				381E5ED227D33652006E916C /* IssueGazer */,
 				381E5F2227D3A896006E916C /* IssueGazerWidget */,
+				381E5F3927D3AED9006E916C /* IssueGazerIntent */,
 				381E5ED127D33652006E916C /* Products */,
 				381E5EE727D339A7006E916C /* Frameworks */,
 			);
@@ -95,6 +120,7 @@
 			children = (
 				381E5ED027D33652006E916C /* IssueGazer.app */,
 				381E5F1D27D3A896006E916C /* IssueGazerWidgetExtension.appex */,
+				381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +141,7 @@
 			children = (
 				381E5F1E27D3A896006E916C /* WidgetKit.framework */,
 				381E5F2027D3A896006E916C /* SwiftUI.framework */,
+				381E5F3727D3AED9006E916C /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,12 +149,21 @@
 		381E5F2227D3A896006E916C /* IssueGazerWidget */ = {
 			isa = PBXGroup;
 			children = (
+				381E5F5427D4396C006E916C /* IssueGazerWidget.intentdefinition */,
 				381E5F2327D3A896006E916C /* IssueGazerWidget.swift */,
-				381E5F2527D3A896006E916C /* IssueGazerWidget.intentdefinition */,
 				381E5F2627D3A896006E916C /* Assets.xcassets */,
 				381E5F2827D3A896006E916C /* Info.plist */,
 			);
 			path = IssueGazerWidget;
+			sourceTree = "<group>";
+		};
+		381E5F3927D3AED9006E916C /* IssueGazerIntent */ = {
+			isa = PBXGroup;
+			children = (
+				381E5F3A27D3AED9006E916C /* IntentHandler.swift */,
+				381E5F3C27D3AED9006E916C /* Info.plist */,
+			);
+			path = IssueGazerIntent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +182,7 @@
 			);
 			dependencies = (
 				381E5F2C27D3A896006E916C /* PBXTargetDependency */,
+				381E5F3E27D3AED9006E916C /* PBXTargetDependency */,
 			);
 			name = IssueGazer;
 			packageProductDependencies = (
@@ -172,6 +209,23 @@
 			productReference = 381E5F1D27D3A896006E916C /* IssueGazerWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		381E5F3527D3AED9006E916C /* IssueGazerIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381E5F4027D3AED9006E916C /* Build configuration list for PBXNativeTarget "IssueGazerIntent" */;
+			buildPhases = (
+				381E5F3227D3AED9006E916C /* Sources */,
+				381E5F3327D3AED9006E916C /* Frameworks */,
+				381E5F3427D3AED9006E916C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IssueGazerIntent;
+			productName = IssueGazerIntent;
+			productReference = 381E5F3627D3AED9006E916C /* IssueGazerIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,6 +240,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					381E5F1C27D3A896006E916C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					381E5F3527D3AED9006E916C = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -205,6 +262,7 @@
 			targets = (
 				381E5ECF27D33652006E916C /* IssueGazer */,
 				381E5F1C27D3A896006E916C /* IssueGazerWidgetExtension */,
+				381E5F3527D3AED9006E916C /* IssueGazerIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +284,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		381E5F3427D3AED9006E916C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				381E5ED427D33652006E916C /* AppDelegate.swift in Sources */,
-				381E5F2A27D3A896006E916C /* IssueGazerWidget.intentdefinition in Sources */,
+				381E5F5527D4396C006E916C /* IssueGazerWidget.intentdefinition in Sources */,
 				381E5ED627D33652006E916C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,8 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				381E5F2927D3A896006E916C /* IssueGazerWidget.intentdefinition in Sources */,
+				381E5F5627D4397B006E916C /* IssueGazerWidget.intentdefinition in Sources */,
 				381E5F2427D3A896006E916C /* IssueGazerWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381E5F3227D3AED9006E916C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381E5F5727D43982006E916C /* IssueGazerWidget.intentdefinition in Sources */,
+				381E5F3B27D3AED9006E916C /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = 381E5F1C27D3A896006E916C /* IssueGazerWidgetExtension */;
 			targetProxy = 381E5F2B27D3A896006E916C /* PBXContainerItemProxy */;
+		};
+		381E5F3E27D3AED9006E916C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 381E5F3527D3AED9006E916C /* IssueGazerIntent */;
+			targetProxy = 381E5F3D27D3AED9006E916C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,7 +532,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -481,8 +560,60 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		381E5F4127D3AED9006E916C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56T4RFDKJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IssueGazerIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IssueGazerIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		381E5F4227D3AED9006E916C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56T4RFDKJR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IssueGazerIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IssueGazerIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muijp.IssueGazer.IssueGazerIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -517,6 +648,15 @@
 			buildConfigurations = (
 				381E5F2F27D3A896006E916C /* Debug */,
 				381E5F3027D3A896006E916C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381E5F4027D3AED9006E916C /* Build configuration list for PBXNativeTarget "IssueGazerIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381E5F4127D3AED9006E916C /* Debug */,
+				381E5F4227D3AED9006E916C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

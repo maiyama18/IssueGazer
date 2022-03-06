@@ -9,7 +9,7 @@
 	</array>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>IssueSearchConfigurationIntent</string>
+		<string>IssuesSearchConfigurationIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
